@@ -1,0 +1,23 @@
+textarea {
+    min-height: 400px;
+}
+
+.unread
+{
+    background-color: grey;
+}
+
+.read
+{
+    background-color: white;
+}
+
+.newMail{
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+}
+.newMail h3{
+    margin: 0;
+}
+

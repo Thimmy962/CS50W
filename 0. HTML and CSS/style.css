@@ -1,0 +1,10 @@
+h1, p{
+    color: blue;
+    text-align: center;
+}
+
+div {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+}

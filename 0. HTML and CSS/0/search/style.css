@@ -1,0 +1,10 @@
+#other_pages
+{
+   align-content: right; 
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+    padding: 5px 10px;
+}

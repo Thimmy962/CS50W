@@ -1,0 +1,14 @@
+{%extends "users/layout.html"%}
+{%block body%}
+
+{%if message%}
+    <div>{{message}}</div>
+{%endif%}
+<h1>Log in</h1>
+<form action="{%url 'users:login'%}" method="post">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" value="Login">
+    {%csrf_token%}
+</form>
+{%endblock%}
