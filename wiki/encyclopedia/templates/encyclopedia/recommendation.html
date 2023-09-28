@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    {%if entries%}
+    <h1>Recommended Pages</h1>
+    <h5>Your search was not found, So we're recommending:</h5>
+    <ul>
+        {% for entry in entries %}
+            <li>
+                <a href="{%url 'encyclopedia:detail' entry%}">{{entry}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    {%else%}
+        <h5 id="not_found">Your search was not found</h5>
+    {%endif%}
+{% endblock %}
